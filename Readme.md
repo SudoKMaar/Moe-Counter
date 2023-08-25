@@ -1,26 +1,31 @@
 # Moe-Counter
 
-多种风格可选的萌萌计数器
+Moe counter with a variety of styles to choose from
 
-![Moe-Counter](https://count.getloli.com/get/@Moe-counter.github)
+![Moe-Counter](https://moe-counter-umkl.onrender.com/get/@Moe-counter.github)
 
 <details>
 <summary>More theme</summary>
 
 ##### asoul
-![asoul](https://count.getloli.com/get/@demo?theme=asoul)
+
+![asoul](https://moe-counter-umkl.onrender.com/get/@demo?theme=asoul)
 
 ##### moebooru
-![moebooru](https://count.getloli.com/get/@demo?theme=moebooru)
+
+![moebooru](https://moe-counter-umkl.onrender.com/get/@demo?theme=moebooru)
 
 ##### rule34
-![Rule34](https://count.getloli.com/get/@demo?theme=rule34)
+
+![Rule34](https://moe-counter-umkl.onrender.com/get/@demo?theme=rule34)
 
 ##### gelbooru
-![Gelbooru](https://count.getloli.com/get/@demo?theme=gelbooru)</details>
+
+![Gelbooru](https://moe-counter-umkl.onrender.com/get/@demo?theme=gelbooru)</details>
 
 ## Demo
-[https://count.getloli.com](https://count.getloli.com)
+
+[https://moe-counter-umkl.onrender.com/](https://moe-counter-umkl.onrender.com/)
 
 ## Usage
 
@@ -28,14 +33,14 @@
 
 #### Run on Replit
 
-- Open the url [https://replit.com/@journeyad/Moe-Counter](https://replit.com/@journeyad/Moe-Counter)
+- Open the url [https://replit.com/@KMaar/Moe-Counter](https://replit.com/@KMaar/Moe-Counter)
 - Just hit the **Fork** button
 - And hit the **Run** button
 
 #### Deploying on your own server
 
 ```shell
-$ git clone https://github.com/journey-ad/Moe-Counter.git
+$ git clone https://github.com/SudoKMaar/Moe-Counter.git
 $ cd Moe-Counter
 $ yarn install
 
@@ -70,12 +75,12 @@ DB_URL="mongodb+srv://account:passwd@***.***.***.mongodb.net/db_count"
 
 ## Credits
 
-*   [replit](https://replit.com/)
-*   [A-SOUL_Official](https://space.bilibili.com/703007996)
-*   [moebooru](https://github.com/moebooru/moebooru)
-*   rule34.xxx NSFW
-*   gelbooru.com NSFW
-*   [Icons8](https://icons8.com/icons/set/star)
+- [replit](https://replit.com/)
+- [A-SOUL_Official](https://space.bilibili.com/703007996)
+- [moebooru](https://github.com/moebooru/moebooru)
+- rule34.xxx NSFW
+- gelbooru.com NSFW
+- [Icons8](https://icons8.com/icons/set/star)
 
 ## License
 
