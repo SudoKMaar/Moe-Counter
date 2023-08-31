@@ -84,10 +84,11 @@ const KEEP_ALIVE_INTERVAL = 1000 * 60 * 14;
 setInterval(() => {
   const http = require("http");
 
-  const options = {
-    url: "http://moe-counter-umkl.onrender.com/get/@Server",
-    method: "GET",
-  };
+    const options = {
+  hostname: "moe-counter-umkl.onrender.com",
+  path: "/get/@Server",
+  method: "GET",
+};
 
   const req = http.request(options, (res) => {
     console.log(`Ping response status: ${res.statusCode}`);
