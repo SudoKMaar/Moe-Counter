@@ -86,7 +86,7 @@ setInterval(() => {
 
     const options = {
   hostname: "moe-counter-umkl.onrender.com",
-  path: "/get/@Server",
+  path: "/heart-beat",
   method: "GET",
 };
 
