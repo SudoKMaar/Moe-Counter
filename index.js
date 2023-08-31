@@ -85,9 +85,7 @@ setInterval(() => {
   const http = require("http");
 
   const options = {
-    hostname: "moe-counter-umkl.onrender.com",
-    port: 3000,
-    path: "/ping",
+    url: "http://moe-counter-umkl.onrender.com/get/@Server",
     method: "GET",
   };
 
