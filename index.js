@@ -4,7 +4,7 @@ const fs = require("fs");
 const config = require("config-yml");
 const express = require("express");
 const compression = require("compression");
-
+const cron = require("node-cron");
 const db = require("./db");
 const themify = require("./utils/themify");
 
@@ -19,10 +19,6 @@ app.set("view engine", "pug");
 app.get("/", (req, res) => {
   const site = config.app.site || `${req.protocol}://${req.get("host")}`;
   res.render("index", { site });
-});
-
-app.get("/ping", (req, res) => {
-  res.send("I m live");
 });
 
 // get the image
@@ -80,27 +76,6 @@ const listener = app.listen(config.app.port || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
 
-const KEEP_ALIVE_INTERVAL = 1000 * 60 * 14;
-setInterval(() => {
-  const http = require("http");
-
-    const options = {
-  hostname: "moe-counter-umkl.onrender.com",
-  path: "/heart-beat",
-  method: "GET",
-};
-
-  const req = http.request(options, (res) => {
-    console.log(`Ping response status: ${res.statusCode}`);
-  });
-
-  req.on("error", (error) => {
-    console.error("Error pinging the server:", error);
-  });
-
-  req.end();
-}, KEEP_ALIVE_INTERVAL);
-
 let __cache_counter = {},
   shouldPush = false;
 
@@ -152,3 +127,7 @@ async function getCountByName(name) {
     return defaultCount;
   }
 }
+
+cron.schedule("*/14 * * * *", () => {
+  console.log("pinging server every 14 minutes");
+});

@@ -12,13 +12,14 @@
   "license": "MIT",
   "dependencies": {
     "better-sqlite3": "^8.1.0",
+    "bson": "4.1.0",
     "compression": "^1.7.4",
     "config-yml": "^0.10.3",
     "express": "^4.17.1",
-    "bson": "4.1.0",
     "image-size": "^0.8.3",
     "mime-types": "^2.1.27",
     "mongoose": "^5.9.28",
+    "node-cron": "^3.0.2",
     "pug": "^3.0.0"
   }
 }
