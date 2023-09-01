@@ -7,9 +7,9 @@ const compression = require("compression");
 const cron = require("node-cron");
 const db = require("./db");
 const themify = require("./utils/themify");
-
+const axios = require("axios");
 const PLACES = 7;
-
+const urlToPing = "http://moe-counter-umkl.onrender.com/get/@Server";
 const app = express();
 
 app.use(express.static("assets"));
@@ -128,6 +128,11 @@ async function getCountByName(name) {
   }
 }
 
-cron.schedule("*/14 * * * *", () => {
-  console.log("pinging server every 14 minutes");
+cron.schedule("*/14 * * * *", async () => {
+  try {
+    const response = await axios.get(urlToPing);
+    console.log(`Pinged ${urlToPing} - Status Code: ${response.status}`);
+  } catch (error) {
+    console.error(`Error pinging ${urlToPing}: ${error.message}`);
+  }
 });
