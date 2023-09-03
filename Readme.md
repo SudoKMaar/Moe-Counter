@@ -2,30 +2,30 @@
 
 Moe counter with a variety of styles to choose from
 
-![Moe-Counter](https://moe-counter-umkl.onrender.com/get/@Moe-counter.github)
+![Moe-Counter](https://moe-counter-krfg.onrender.com/get/@Moe-counter.github)
 
 <details>
 <summary>More theme</summary>
 
 ##### asoul
 
-![asoul](https://moe-counter-umkl.onrender.com/get/@demo?theme=asoul)
+![asoul](https://moe-counter-krfg.onrender.com/get/@demo?theme=asoul)
 
 ##### moebooru
 
-![moebooru](https://moe-counter-umkl.onrender.com/get/@demo?theme=moebooru)
+![moebooru](https://moe-counter-krfg.onrender.com/get/@demo?theme=moebooru)
 
 ##### rule34
 
-![Rule34](https://moe-counter-umkl.onrender.com/get/@demo?theme=rule34)
+![Rule34](https://moe-counter-krfg.onrender.com/get/@demo?theme=rule34)
 
 ##### gelbooru
 
-![Gelbooru](https://moe-counter-umkl.onrender.com/get/@demo?theme=gelbooru)</details>
+![Gelbooru](https://moe-counter-krfg.onrender.com/get/@demo?theme=gelbooru)</details>
 
 ## Demo
 
-[https://moe-counter-umkl.onrender.com/](https://moe-counter-umkl.onrender.com/)
+[https://moe-counter-krfg.onrender.com/](https://moe-counter-krfg.onrender.com/)
 
 ## Usage
 

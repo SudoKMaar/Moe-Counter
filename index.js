@@ -9,7 +9,7 @@ const db = require("./db");
 const themify = require("./utils/themify");
 const axios = require("axios");
 const PLACES = 7;
-const urlToPing = "http://moe-counter-umkl.onrender.com/get/@Server";
+const urlToPing = "http://moe-counter-krfg.onrender.com/get/@Server";
 const app = express();
 
 app.use(express.static("assets"));
