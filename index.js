@@ -11,6 +11,9 @@ const axios = require("axios");
 const PLACES = 7;
 const urlToPing = "http://moe-counter-krfg.onrender.com/get/@Server";
 const app = express();
+const mysql = require("mysql2");
+require("dotenv").config();
+const distalk = process.env.DISTALK_DB_URL;
 
 app.use(express.static("assets"));
 app.use(compression());
@@ -134,5 +137,25 @@ cron.schedule("*/14 * * * *", async () => {
     console.log(`Pinged ${urlToPing} - Status Code: ${response.status}`);
   } catch (error) {
     console.error(`Error pinging ${urlToPing}: ${error.message}`);
+  }
+});
+
+async function executeMySQLQuery() {
+  try {
+    const connection = await mysql.createConnection(distalk);
+    const [rows] = await connection.promise().query("SHOW TABLES");
+    const tableNames = Object.values(rows[0]);
+    console.log("MySQL Query Result - Tables:", tableNames);
+    await connection.end();
+  } catch (error) {
+    console.error("Error executing MySQL query:", error.message);
+  }
+}
+
+cron.schedule("0 0 */10 * *", async () => {
+  try {
+    await executeMySQLQuery();
+  } catch (error) {
+    console.error("Error in cron job:", error.message);
   }
 });
